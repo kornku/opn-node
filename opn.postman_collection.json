@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "b6398962-a6c2-4c03-8b9d-a3bfc04174ae",
+		"name": "opn",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28728552"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\":\"2@2.com\",\n  \"name\":\"korn\",\n  \"password\":\"12345\",\n  \"dateOfBirth\":\"01-01-2024\",\n  \"address\":\"thailand\",\n  \"isSubscribe\":true,\n  \"gender\":\"male\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\":\"2@2.com\",\n  \"name\":\"korn\",\n  \"password\":\"12345\",\n  \"dateOfBirth\":\"01-01-2024\",\n  \"address\":\"thailand\",\n  \"isSubscribe\":true,\n  \"gender\":\"male\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changepassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"token\":\"SosbYln7mtAtu8Rj\",\n  \"password\":\"12345\",\n  \"newPassword\":\"11111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register/5af568e2-c0c8-454d-88e4-afcb9b04379d/change_password",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register",
+						"5af568e2-c0c8-454d-88e4-afcb9b04379d",
+						"change_password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbyid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/profile/d4fee914-d248-481c-9ff1-52b5ae9b88b7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"profile",
+						"d4fee914-d248-481c-9ff1-52b5ae9b88b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gettoken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/register/5c204388-d75c-4a94-85ca-3431bd314dce/token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register",
+						"5c204388-d75c-4a94-85ca-3431bd314dce",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
